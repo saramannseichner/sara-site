@@ -8,41 +8,28 @@ slides:
   background: images/@stock/working.jpg
 - layout: alt
   title: Get to know me better if you wanna!
+  image_bottom: images/@stock/right-arrow.png
   background: images/@stock/water.jpg
 works_left:
-- title: Cooco fashion
-  link_to: portfolio-item.html
-  image: images/@stock/work-1.jpg
-  categories: Website, brand
-- title: Dear god
-  link_to: portfolio-item.html
-  image: images/@stock/work-20.jpg
-  categories: Website, print
-- title: Green choice
-  link_to: portfolio-item.html
-  image: images/@stock/work-22.jpg
-  categories: Website
-- title: Perfect bags
-  link_to: portfolio-item-2.html
-  image: images/@stock/work-7.jpg
-  categories: Perfect bags
+- title: coffee
+  image: images/@stock/coffee-cup.png
+  categories: who doesn't love a good cup of joe?
+- title: DJing
+  image: images/@stock/dj.png
+  categories: they call me mani pedi
+- title: swimming
+  image: images/@stock/sea-and-sun.png
+  categories: real talk i'm like actually a fish
 works_right:
-- title: Dances App
-  link_to: portfolio-item-2.html
-  image: images/@stock/work-3.jpg
-  categories: Website
-- title: Vintage chairs
-  link_to: portfolio-item.html
-  image: images/@stock/work-5.jpg
-  categories: Graphic, brand
-- title: Help Five
-  link_to: portfolio-item-2.html
-  image: images/@stock/work-6.jpg
-  categories: Photography
-- title: Brandbooks
-  link_to: portfolio-item.html
-  image: images/@stock/work-8.jpg
-  categories: Website, graphic
+- title: The outdoors
+  image: images/@stock/mountain.png
+  categories: catch me outside
+- title: Wine
+  image: images/@stock/wine.png
+  categories: you had me at pinot noir
+- title: biking
+  image: images/@stock/bicycle.png
+  categories: something about having fun between your legs???
 ---
 
 <div class="full no-padding">
@@ -100,8 +87,8 @@ works_right:
   <div class="section-title">
     <div class="row">
       <div class="medium-10 medium-centered columns">
-        <h2>Recent works</h2>
-        <p>You will love we have done</p>
+        <h2>things I like</h2>
+        <p>some stuff that gets me stoked other than coding</p>
       </div>
     </div>
   </div>
@@ -110,7 +97,7 @@ works_right:
       <div class="gallery-left-section">
         {% for work in page.works_left %}
           <div class="work-wrapper">
-            <a href="{{work.link_to}}" class="work">
+            <a href="#" class="work">
               <img src="{{site.url}}/{{work.image}}" alt="">
               <div class="info">
                 <h3>{{work.title}}</h3>
@@ -125,7 +112,7 @@ works_right:
       <div class="gallery-right-section">
         {% for work in page.works_right %}
           <div class="work-wrapper">
-            <a href="{{work.link_to}}" class="work">
+            <a href="#" class="work">
               <img src="{{site.url}}/{{work.image}}" alt="">
               <div class="info">
                 <h3>{{work.title}}</h3>

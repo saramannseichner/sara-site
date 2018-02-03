@@ -1,0 +1,93 @@
+---
+layout: default
+section_id: home
+slides:
+- title: Web Development
+  text: sprout <span>Find Your Perfect Plant</span>
+  button:
+    text: More Info
+    url: http://www.sproutmtl.ca
+  bg_color: "#f6f6f6"
+  image: images/@stock/iMac.png
+- title: Web Development
+  text: Gallery514 <span>Be a part of local art</span>
+  button:
+    text: More Info
+    url: https://gallery514.herokuapp.com/
+  bg_color: "#83d3d2"
+  image: images/@stock/g514_macbook.png
+- title: Web Development
+  text: sprout <span>Find Your Perfect Plant</span>
+  button:
+    text: More Info
+    url: http://www.sproutmtl.ca
+  bg_color: "#f6f6f6"
+  image: images/@stock/iMac.png
+- title: Web Development
+  text: Gallery514 <span>Be a part of local art</span>
+  button:
+    text: More Info
+    url: https://gallery514.herokuapp.com/
+  bg_color: "#E4A48B"
+  image: images/@stock/g514_macbook.png
+---
+
+<div class="full no-padding" style="height: 100vh;">
+  <div id="slides">
+    <div class="slides-container">
+      {% for slide in page.slides %}
+        <div class="slide">
+          <div class="slide-info">
+            <p>{{ slide.title }}</p>
+            <h1>{{ slide.text }}</h1>
+            <div class="three spacing"></div>
+            <a href="{{ slide.button.url }}" class="button boxed black">{{ slide.button.text }}</a>
+          </div>
+          <div class="slide-left" style="background-color: {{ slide.bg_color }};">
+          </div>
+          <div class="slide-right" style="background: url({{ slide.image }}) center center no-repeat;background-size: cover;">
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <nav class="slides-navigation">
+      <a href="#" class="next"><i class="icon-arrows-slim-right"></i></a>
+      <a href="#" class="prev"><i class="icon-arrows-slim-left"></i></a>
+    </nav>
+  </div>
+</div>
+<div class="full light-grey centered-text">
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <img src="images/@stock/sara.jpeg" alt="" class="wow flipInY" data-wow-duration="2s" data-wow-delay="0.1s">
+        <div class="spacing"></div>
+        <h2>hi i'm sara!</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-10 large-centered columns">
+      <p class="big-text">
+        And I'm new to the game.
+        I'm a full stack web developer proficient in Ruby on Rails, HTML, CSS, JavaScript, SQL and web design. Super stoked to collaborate with creative and motivated people!
+      </p>
+      <div class="two spacing"></div>
+      <a href="#" class="button boxed">Know more</a>
+    </div>
+  </div>
+</div>
+<div class="full light-grey no-padding">
+  <div class="two spacing"></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='clients'>
+        {% for client in page.clients %}
+          <div><a href="#"><img alt="" src="{{site.url}}/{{client.image}}"></a></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="two spacing"></div>
+</div>
+

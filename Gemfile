@@ -9,4 +9,5 @@ gem 'jekyll-paginate'
 gem 'jekyll-compose'
 # gem 'jekyll-github-metadata', "~> 1"
 gem "github-pages", group: :jekyll_plugins
-gem 'puma'
+source "https://rubygems.org"
+gem 'sinatra', '1.0'

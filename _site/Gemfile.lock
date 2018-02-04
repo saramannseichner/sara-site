@@ -116,6 +116,7 @@ GEM
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
     public_suffix (1.5.3)
+    puma (3.11.2)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -150,6 +151,7 @@ DEPENDENCIES
   jekyll-mentions
   jekyll-paginate
   jekyll-sitemap
+  puma
 
 RUBY VERSION
    ruby 2.3.5p376

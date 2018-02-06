@@ -26,4 +26,4 @@ paginate: 6
 paginate_path: "blog/page:num"
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site
+url: "www.sara.fyi/" # the base hostname & protocol for your site
